@@ -3,6 +3,7 @@ package Pruebas;
 import org.lwjgl.LWJGLException;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
+import org.lwjgl.opengl.GL11;
 
 public class Test1 {
 	public void start()
@@ -17,6 +18,9 @@ public class Test1 {
 			e.printStackTrace();
 			System.exit(0);
 		}
+		
+		GL11.glMatrixMode(GL11.GL_PROJECTION);
+		
 		
 		while(!Display.isCloseRequested())
 		{
